@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Keeper</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Recipe Keeper</h1>
+    </div>
+    <div class="container">
+        <!-- Left Column - Form -->
+        <div class="left-column">
+            <h2 id="form-header">Add Recipe</h2>
+            <form id="recipe-form">
+                <!-- Recipe Name Input -->
+                <label for="recipe-name">Recipe Name</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+
+                <!-- Ingredients Textarea -->
+                <label for="ingredients">Ingredients</label>
+                <textarea id="ingredients" name="ingredients" placeholder="List ingredients separated by commas" required></textarea>
+
+                <!-- Recipe Steps Textarea -->
+                <label for="steps">Steps for preparation</label>
+                <textarea id="steps" name="steps" placeholder="Steps for preparation" required></textarea>
+
+                <!-- Image URL Input -->
+                <label for="image-url">Image URL</label>
+                <input type="text" id="image-url" name="image-url" placeholder="Image URL (optional)">
+
+                <!-- Add Recipe Button -->
+                <button class="form-button" id="form-button" type="submit">Add Recipe</button>
+            </form>
+        </div>
+        <!-- Right Column - Recipe Display -->
+        <div class="right-column" id="display">
+            <h2>Your Recipes</h2>
+
+            <!-- Add more recipe blocks here as needed -->
+        </div>
+    </div>
+    
+    <!-- Link to your JavaScript file -->
+    <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>
